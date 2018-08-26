@@ -5,7 +5,7 @@ float normalizeAxisValue(Sint16 value);
 
 int main(int argc, char *argv[]) {
   SDL_GameController *controller;
-  if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+  if (SDL_Init(SDL_INIT_GAMECONTROLLER) < 0) {
     printf("SDL_Init failed: %s\n", SDL_GetError());
     return 1;
   }
